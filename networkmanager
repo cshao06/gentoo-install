@@ -1,0 +1,4 @@
+net-misc/networkmanager udev bluetooth dhclient wifi ncurses
+# required by net-misc/networkmanager-1.18.6::gentoo[wifi,-iwd]
+# required by net-misc/networkmanager (argument)
+>=net-wireless/wpa_supplicant-2.9-r2 dbus

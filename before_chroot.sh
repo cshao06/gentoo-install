@@ -99,7 +99,12 @@ select option in $steps; do
             echo "Add USE flags if needed"
             ;;
         mirrors)
-            confirm mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+            if ask "mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf" N; then
+                mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+            else
+                echo "Cancelled"
+            fi
+            # echo "Run \"mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf\" to select mirrors"
             confirm mkdir --parents /mnt/gentoo/etc/portage/repos.conf
             confirm cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
             ;;

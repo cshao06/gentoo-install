@@ -5,7 +5,7 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system>  <mount point>  <type>  <options>  <dump>  <pass>
-/dev/sda1  /boot  vfat  umask=0077  0  0
 /dev/sda3  /  ext4  noatime,errors=remount-ro  0  0
+/dev/sda6  /boot  vfat  umask=0077  0  0
 /dev/sda4  /home  ext4  noatime,errors=remount-ro  0  0
 /dev/sda5  none  swap  defaults  0  0

@@ -1,0 +1,28 @@
+kernel config
+/etc/conf.d/net
+/etc/portage/make.conf
+/etc/portage/package.use/
+/etc/fstab
+/etc/default/grub
+Notes on using openSUSE on a macbook pro (interrupt runaway boot parameter approach)
+
+
+
+
+
+
+
+
+
+
+
+
+udev
+networkmanager
+
+app-admin/sudo
+app-portage/ufed
+app-portage/eix
+app-portage/layman
+app-arch/lz4
+

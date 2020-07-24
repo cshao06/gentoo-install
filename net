@@ -1,1 +1,3 @@
-config_eth0="dhcp"
+config_enp0s20u5="dhcp"
+# prefer wpa_supplicant over wireless-tools
+modules="wpa_supplicant"
